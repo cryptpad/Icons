@@ -1,0 +1,17 @@
+{
+  "$schema": "../icon.schema.json",
+  "contributors": [
+    "colebemis",
+    "ericfennis",
+    "danielbayley",
+    "davidbenque"
+  ],
+  "tags": [
+    "document",
+    "presentation"
+  ],
+  "categories": [
+    "cryptpad-apps",
+    "files"
+  ]
+}
