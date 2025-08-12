@@ -1,0 +1,20 @@
+{
+  "$schema": "../icon.schema.json",
+  "contributors": [
+    "guanboo-yang",
+    "ericfennis"
+  ],
+  "tags": [
+    "done",
+    "check",
+    "tick",
+    "complete",
+    "list",
+    "to-do",
+    "bom"
+  ],
+  "categories": [
+    "cryptpad-forms",
+    "text"
+  ]
+}
