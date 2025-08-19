@@ -21,29 +21,32 @@
     "aliases": {
       "type": "array",
       "items": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": ["name"],
-        "properties": {
-          "name": {
+        "oneOf": [
+          {
             "type": "string"
           },
-          "deprecated": {
-            "const": true
-          },
-          "deprecationReason": {
-            "$ref": "#/$defs/aliasDeprecationReasons"
-          },
-          "toBeRemovedInVersion": {
-            "$ref": "#/$defs/versionNumber",
-            "description": "The version this icon will be removed in."
+          {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "deprecated": {
+                "const": true
+              },
+              "deprecationReason": {
+                "$ref": "#/$defs/aliasDeprecationReasons"
+              },
+              "toBeRemovedInVersion": {
+                "$ref": "#/$defs/versionNumber",
+                "description": "The version this icon will be removed in."
+              }
+            },
+            "dependentRequired": {
+              "deprecated": ["deprecationReason", "toBeRemovedInVersion"]
+            }
           }
-        },
-        "dependentRequired": {
-          "deprecated": ["deprecationReason", "toBeRemovedInVersion"],
-          "deprecationReason": ["deprecated"],
-          "toBeRemovedInVersion": ["deprecated"]
-        }
+        ]
       },
       "uniqueItems": true
     },
@@ -52,6 +55,7 @@
       "items": {
         "type": "string",
         "enum": [
+          "cryptpad-apps",
           "accessibility",
           "account",
           "animals",
@@ -127,9 +131,7 @@
     }
   },
   "dependentRequired": {
-    "deprecated": ["deprecationReason", "toBeRemovedInVersion"],
-    "deprecationReason": ["deprecated"],
-    "toBeRemovedInVersion": ["deprecated"]
+    "deprecated": ["deprecationReason", "toBeRemovedInVersion"]
   },
   "$defs": {
     "iconDeprecationReasons": {

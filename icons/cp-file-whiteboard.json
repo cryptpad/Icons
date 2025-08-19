@@ -3,17 +3,15 @@
   "contributors": [
     "colebemis",
     "ericfennis",
-    "danielbayley"
+    "danielbayley",
+    "davidbenque"
   ],
   "tags": [
-    "data",
-    "txt",
-    "pdf",
+    "drawing",
     "document"
   ],
   "categories": [
     "cryptpad-apps",
-    "files",
-    "text"
+    "files"
   ]
 }
