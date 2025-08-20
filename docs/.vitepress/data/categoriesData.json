@@ -4,10 +4,6 @@
     "title": "Accessibility"
   },
   {
-    "name": "cryptpad-forms",
-    "title": "CryptPad Forms"
-  },
-  {
     "name": "account",
     "title": "Accounts & access"
   },
@@ -42,6 +38,10 @@
   {
     "name": "cryptpad-apps",
     "title": "CryptPad Apps"
+  },
+  {
+    "name": "cryptpad-forms",
+    "title": "CryptPad Forms"
   },
   {
     "name": "cursors",
